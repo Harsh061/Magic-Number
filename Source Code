@@ -1,0 +1,144 @@
+
+#include<stdio.h>
+#include<conio.h>
+
+int answer=0;
+char resp;
+void printanswer()
+{
+  printf("\n\n\n\n\tMAGIC GAME");
+  printf("\n\n\n\n\n\n\n\t\tThe number in you mind is %d",answer);
+  getch();
+}
+
+void screen6()
+{
+ printf("\n 32 37 42 47 52 57");
+ printf("\n 33 38 43 48 53 58");
+ printf("\n 34 39 44 49 54 59");
+ printf(" \n 35 40 45 50 55 60");
+ printf("\n 36 41 46 51 56 ");
+
+ printf("\n\nPress 'Y' if number is present");
+ printf("\n the list else press any key\n");
+ resp=getche();
+ if(resp=='y'||resp=='Y')
+ {
+  answer+=32;
+  resp='n';
+ }
+ printanswer();
+}
+
+void screen5()
+{
+ printf(" \n16 21 26 31 52 57");
+ printf("\n 17 22 27 48 53 58");
+ printf(" \n 18 23 28 49 54 59");
+ printf("\n 19 24 29 50 55 60");
+ printf("\n 20 25 30 51 56 ");
+
+ printf("\n\nPress 'Y' if number is present");
+ printf("\n\n the list else press any key\n");
+
+ resp=getche();
+ if(resp=='y'||resp=='Y')
+ {
+  answer+=16;
+  resp='n';
+ }
+ screen6();
+}
+
+void screen4()
+{
+ printf( "\n 8 13 26 31 44 57");
+ printf( "\n 9 14 27 40 45 58");
+ printf( "\n 10 15 28 41 46 59");
+ printf("\n 11 24 29 42 47 60");
+ printf("\n 12 25 30 43 56 ");
+
+ printf("\n\nPress 'Y' if number is present");
+ printf("\n\n the list else press any key\n");
+
+ resp=getche();
+ if(resp=='y'||resp=='Y')
+ {
+  answer+=8;
+  resp='n';
+ }
+ screen5();
+}
+
+void screen3()
+{
+ printf( "\n  4 13 22 31 44 53");
+ printf( " \n 5 14 23 36 45 54");
+ printf( " \n 6 15 28 37 46 55");
+ printf( " \n 7 20 29 38 47 60");
+ printf( "\n 12 21 30 39 52 ");
+ printf("\n\nPress 'Y' if number is present");
+ printf("\n\n the list else press any key\n");
+ resp=getche();
+ if(resp=='y'||resp=='Y')
+ {
+  answer+=4;
+  resp='n';
+ }
+ screen4();
+}
+
+void screen2()
+{
+ printf( " \n 2 11 22 31 42 51");
+ printf( " \n 3 14 23 34 43 54");
+ printf( " \n 6 15 26 35 46 55");
+ printf( " \n 7 18 27 38 47 58");
+ printf( "\n 10 19 30 39 50 59"); 
+ 
+
+ printf("\n\nPress 'Y' if number is present");
+ printf("\n \nthe list else press any key\n");
+
+ resp=getche();
+ if(resp=='y'||resp=='Y')
+ {
+  answer+=2;
+  resp='n';
+ }
+ screen3();
+}
+
+void screen1()
+{
+ printf("\n 1 11 21 31 41 51");
+ printf(" \n 3 13 23 33 43 53");
+ printf("\n 5 15 25 35 45 55");
+ printf("\n 7 17 27 37 47 57");
+ printf("\n 9 19 29 39 49 59");
+
+ printf("\n\nPress 'Y' if number is present");
+ printf("\n \nthe list else press any key\n");
+
+ resp=getche();
+ if(resp=='y'||resp=='Y')
+ {
+  answer+=1;
+  resp='n';
+ }
+ screen2();
+}
+
+void main()
+{   
+ clrscr();
+ answer=0;
+ printf("\nSelect any number");
+ printf("\n between 1 to 60");
+ printf("  \n in your mind...");
+ printf("\n Press Enter to Continue...");
+ getch();
+
+ screen1();
+}
+
