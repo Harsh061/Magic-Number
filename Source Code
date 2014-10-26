@@ -1,3 +1,12 @@
+/*
+ ============================================================================
+ Name        : Git.c
+ Author      : Harshit Parakh
+ Version     : 1.0
+ Copyright   : None
+ Description : Magic number, ANSI-style
+ ============================================================================
+ */
 
 #include<stdio.h>
 #include<conio.h>
