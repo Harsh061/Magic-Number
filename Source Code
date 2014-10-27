@@ -47,7 +47,7 @@ void screen6(){
        	   printf("\n 62 63 96 97 98 99");
 
 	   printf("\n\nPress 'Y' if number is present");		
-	   printf("\n the list else press anyy key\n");
+	   printf("\n the list else press any key\n");
 	   resp=getchar();
 	   while(resp<32)
 	        resp=getchar();
@@ -178,6 +178,6 @@ int main(int argc, char** argv){
 	   printf("\n Press Enter to Continue...");
 	   answer=getchar();
 	   answer=0;
-	   screen1();.
-	   return 0;
+	   screen1();
+	   return (0);
 }
