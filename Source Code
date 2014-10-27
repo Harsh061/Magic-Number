@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : Git.c
- Author      : Harshit Parakh
+ Author      : Harshit Parakh &  Deepanshu Thakur 
  Version     : 1.0
  Copyright   : None
  Description : Magic number
@@ -11,7 +11,7 @@
 #include<stdio.h>
 
 int answer=0;
-char resp;
+char resp='\n';
 void printanswer(){
      printf("\n\n\n\n\tMAGIC GAME");
      printf("\n\n\n\n\n\n\n\t\tThe number in you mind is %d",answer);
@@ -39,154 +39,145 @@ void screen7(){
 }
 
 void screen6(){
-     printf("\n 32 37 42 47 52 57");
-     printf("\n 33 38 43 48 53 58");
-     printf("\n 34 39 44 49 54 59");
-     printf("\n 35 40 45 50 55 60");
-     printf("\n 36 41 46 51 56 61");
-     printf("\n 62 63 96 97 98 99");
+           printf("\n 32 37 42 47 52 57");
+           printf("\n 33 38 43 48 53 58");
+           printf("\n 34 39 44 49 54 59"); 
+     	   printf("\n 35 40 45 50 55 60");
+     	   printf("\n 36 41 46 51 56 61");
+       	   printf("\n 62 63 96 97 98 99");
 
-     printf("\n\nPress 'Y' if number is present");
-     printf("\n the list else press any key\n");
-     resp=getchar();
-     while(resp<32)
+	   printf("\n\nPress 'Y' if number is present");		
+	   printf("\n the list else press anyy key\n");
+	   resp=getchar();
+	   while(resp<32)
 	        resp=getchar();
-     if(resp=='y'||resp=='Y'){
-         answer+=32;
-         resp='n';
-     }
-     screen7();
+           if(resp=='y'||resp=='Y'){
+                answer+=32;
+                resp='n';
+           }
+           screen7();
 }
 
 void screen5() {
-    printf("\n 16 21 26 31 52 57");
-    printf("\n 17 22 27 48 53 58");
- printf("\n 18 23 28 49 54 59");
- printf("\n 19 24 29 50 55 60");
- printf("\n 20 25 30 51 56 61");
- printf("\n 62 63 80 81 82 83");
- printf("\n 84 85 86 87 88 89");
- printf("\n 90 91 92 93 94 95");
+    	   printf("\n 16 21 26 31 52 57");
+    	   printf("\n 17 22 27 48 53 58");
+ 	   printf("\n 18 23 28 49 54 59");
+           printf("\n 19 24 29 50 55 60");
+ 	   printf("\n 20 25 30 51 56 61");
+ 	   printf("\n 62 63 80 81 82 83");
+ 	   printf("\n 84 85 86 87 88 89");
+ 	   printf("\n 90 91 92 93 94 95");
 
- printf("\n\nPress 'Y' if number is present");
- printf("\n\n the list else press any key\n");
- resp=getchar();
- while(resp<32)
-	 resp=getchar();
- if(resp=='y'||resp=='Y')
- {
-  answer+=16;
-  resp='n';
- }
- screen6();
+ 	   printf("\n\nPress 'Y' if number is present");
+ 	   printf("\n\n the list else press any key\n");
+ 	   resp=getchar();
+ 	   while(resp<32)
+	 	resp=getchar();
+ 	   if(resp=='y'||resp=='Y'){
+  	    	answer+=16;
+  		resp='n';
+ 	   }
+ 	   screen6();
 }
 
-void screen4()
-{
- printf("\n  8 13 26 31 44 57");
- printf("\n  9 14 27 40 45 58");
- printf("\n 10 15 28 41 46 59");
- printf("\n 11 24 29 42 47 60");
- printf("\n 12 25 30 43 56 61");
- printf("\n 62 63 72 73 74 75");
- printf("\n 76 77 78 79 88 90");
- printf("\n 91 92 93 94 95");
+void screen4(){
+	   printf("\n  8 13 26 31 44 57");
+ 	   printf("\n  9 14 27 40 45 58");
+ 	   printf("\n 10 15 28 41 46 59");
+ 	   printf("\n 11 24 29 42 47 60");
+ 	   printf("\n 12 25 30 43 56 61");
+ 	   printf("\n 62 63 72 73 74 75");
+ 	   printf("\n 76 77 78 79 88 90");
+ 	   printf("\n 91 92 93 94 95");
 
- printf("\n\nPress 'Y' if number is present");
- printf("\n\n the list else press any key\n");
- resp=getchar();
- while(resp<32)
-	 resp=getchar();
- if(resp=='y'||resp=='Y')
- {
-  answer+=8;
-  resp='n';
- }
- screen5();
+ 	   printf("\n\nPress 'Y' if number is present");
+ 	   printf("\n\n the list else press any key\n");
+ 	   resp=getchar();
+ 	   while(resp<32)
+	 	resp=getchar();
+ 	   if(resp=='y'||resp=='Y'){
+  		answer+=8;
+  		resp='n';
+ 	   }
+ 	   screen5();
 }
 
-void screen3()
-{
- printf( "\n  4 13 22 31 44 53");
- printf( "\n  5 14 23 36 45 54");
- printf( "\n  6 15 28 37 46 55");
- printf( "\n  7 20 29 38 47 60");
- printf( "\n 12 21 30 39 52 61");
- printf( "\n 62 63 68 69 70 71");
- printf( "\n 76 77 78 79 84 85");
- printf( "\n 86 87 92 93 94 95");
- printf("\n\nPress 'Y' if number is present");
- printf("\n\n the list else press any key\n");
- resp=getchar();
- while(resp<32)
-	 resp=getchar();
- if(resp=='y'||resp=='Y')
- {
-  answer+=4;
-  resp='n';
- }
- screen4();
+void screen3(){
+ 	   printf( "\n  4 13 22 31 44 53");
+ 	   printf( "\n  5 14 23 36 45 54");
+ 	   printf( "\n  6 15 28 37 46 55");
+ 	   printf( "\n  7 20 29 38 47 60");
+	   printf( "\n 12 21 30 39 52 61");
+	   printf( "\n 62 63 68 69 70 71");
+	   printf( "\n 76 77 78 79 84 85");
+	   printf( "\n 86 87 92 93 94 95");
+	   printf("\n\nPress 'Y' if number is present");
+	   printf("\n\n the list else press any key\n");
+	   resp=getchar();
+	   while(resp<32)
+	 	resp=getchar();
+ 	   if(resp=='y'||resp=='Y'){
+  		answer+=4;
+  		resp='n';
+ 	   }
+ 	   screen4();
 }
 
-void screen2()
-{
- printf( "\n  2 11 22 31 42 51");
- printf( "\n  3 14 23 34 43 54");
- printf( "\n  6 15 26 35 46 55");
- printf( "\n  7 18 27 38 47 58");
- printf( "\n 10 19 30 39 50 59");
- printf( "\n 62 63 66 67 70 71");
- printf( "\n 74 75 78 79 82 83");
- printf( "\n 86 87 90 91 94 95");
- printf( "\n 98 99");
-
-
- printf("\n\nPress 'Y' if number is present");
- printf("\n \nthe list else press any key\n");
- resp=getchar();
- while(resp<32)
-	 resp=getchar();
- if(resp=='y'||resp=='Y')
- {
-  answer+=2;
-  resp='n';
- }
- screen3();
+void screen2(){
+	   printf( "\n  2 11 22 31 42 51");
+	   printf( "\n  3 14 23 34 43 54");
+	   printf( "\n  6 15 26 35 46 55");
+	   printf( "\n  7 18 27 38 47 58");
+	   printf( "\n 10 19 30 39 50 59");
+	   printf( "\n 62 63 66 67 70 71");
+	   printf( "\n 74 75 78 79 82 83");
+	   printf( "\n 86 87 90 91 94 95");
+	   printf( "\n 98 99");
+	
+	
+	   printf("\n\nPress 'Y' if number is present");
+	   printf("\n \nthe list else press any key\n");
+	   resp=getchar();
+	   while(resp<32)
+	   	resp=getchar();
+ 	   if(resp=='y'||resp=='Y'){
+  		answer+=2;
+  		resp='n';
+ 	   }
+ 	   screen3();
 }
 
-void screen1()
-{
- printf("\n  1 11 21 31 41 51");
- printf("\n  3 13 23 33 43 53");
- printf("\n  5 15 25 35 45 55");
- printf("\n  7 17 27 37 47 57");
- printf("\n  9 19 29 39 49 59");
- printf("\n 61 63 65 67 69 71");
- printf("\n 73 75 77 79 81 83");
- printf("\n 85 87 89 91 93 95");
- printf("\n 97 99");
-
- printf("\n\nPress 'Y' if number is present");
- printf("\n \nthe list else press any key\n");
- resp=getchar();
- while(resp<32)
-	 resp=getchar();
- if(resp=='y'||resp=='Y')
- {
-  answer+=1;
-  resp='n';
- }
- screen2();
+void screen1(){
+	   printf("\n  1 11 21 31 41 51");
+	   printf("\n  3 13 23 33 43 53");
+	   printf("\n  5 15 25 35 45 55");
+	   printf("\n  7 17 27 37 47 57");
+	   printf("\n  9 19 29 39 49 59");
+	   printf("\n 61 63 65 67 69 71");
+	   printf("\n 73 75 77 79 81 83");
+	   printf("\n 85 87 89 91 93 95");
+	   printf("\n 97 99");
+	
+	   printf("\n\nPress 'Y' if number is present");
+	   printf("\n \nthe list else press any key\n");
+	   resp=getchar();
+	   while(resp<32)
+		   resp=getchar();
+ 	   if(resp=='y'||resp=='Y'){
+  		answer+=1;
+  		resp='n';
+ 	   }
+ 	   screen2();
 }
 
-int main(int argc, char** argv)
-{
- answer=0;
- printf("\nSelect any number");
- printf("\n between 1 to 60");
- printf("  \n in your mind...");
- printf("\n Press Enter to Continue...");
- answer=getchar();
- answer=0;
- screen1();
+int main(int argc, char** argv){
+ 	   answer=0;
+	   printf("\nSelect any number");
+	   printf("\n between 1 to 60");
+	   printf("  \n in your mind...");
+	   printf("\n Press Enter to Continue...");
+	   answer=getchar();
+	   answer=0;
+	   screen1();.
+	   return 0;
 }
